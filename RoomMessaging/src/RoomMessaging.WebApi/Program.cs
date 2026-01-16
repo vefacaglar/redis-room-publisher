@@ -7,16 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddApplication();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+app.MapOpenApi();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
@@ -29,5 +29,7 @@ app.MapPost("api/room/{room}/message", async (string room, RoomMessageItem messa
     }, ct);
     return Results.Accepted();
 });
+
+app.MapGet("/health", () => Results.Ok("RoomMessaging Web API is running."));
 
 app.Run();
