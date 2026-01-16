@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RoomMessaging.Application/RoomMessaging.Application.csproj" />
+    <Project Path="src/RoomMessaging.Domain/RoomMessaging.Domain.csproj" />
+    <Project Path="src/RoomMessaging.Infrastructure/RoomMessaging.Infrastructure.csproj" />
+    <Project Path="src/RoomMessaging.WebApi/RoomMessaging.WebApi.csproj" />
+  </Folder>
+</Solution>

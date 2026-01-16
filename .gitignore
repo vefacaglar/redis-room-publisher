@@ -1,0 +1,65 @@
+# =========================
+# .NET / ASP.NET Core
+# =========================
+bin/
+obj/
+out/
+
+# .NET user-specific
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET tool artifacts
+.dotnet/
+.nuget/packages/
+
+# =========================
+# Build / Publish
+# =========================
+publish/
+artifacts/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# App settings
+# =========================
+appsettings.*.json
+!appsettings.json
+
+# Secrets
+secrets.json
+*.secrets.json
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# =========================
+# Test results
+# =========================
+TestResults/
+
+# =========================
+# Coverage
+# =========================
+coverage/
+coverage.*.xml
+
+# =======================

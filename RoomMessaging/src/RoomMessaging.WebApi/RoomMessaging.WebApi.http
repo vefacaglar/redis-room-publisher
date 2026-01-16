@@ -1,0 +1,6 @@
+@RoomMessaging.WebApi_HostAddress = http://localhost:5069
+
+GET {{RoomMessaging.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
