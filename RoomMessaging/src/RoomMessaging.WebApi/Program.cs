@@ -2,6 +2,7 @@ using MediatR;
 using RoomMessaging.Application;
 using RoomMessaging.Application.Features.RoomMessage.Send;
 using RoomMessaging.Application.Models;
+using RoomMessaging.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
