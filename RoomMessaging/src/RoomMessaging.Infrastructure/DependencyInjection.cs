@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RoomMessaging.Application.Messaging;
 using RoomMessaging.Infrastructure.Messaging;
